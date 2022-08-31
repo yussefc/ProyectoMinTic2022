@@ -3,20 +3,20 @@ public class Enterprise {
     private String name;
     private String document;
     private String phone;git
-    private String addres;
+    private String address;
     private User [] users;
-    private Transaccion[] transaccions;
+    private Transaction[] transactions;
     private date createdAt;
     private date updatedAt;
 
-    public Enterprise(long id, String name, String document, String phone, String addres, User[] users, Transaccion[] transaccions, date createdAt, date updatedAt) {
+    public Enterprise(long id, String name, String document, String phone, String address, User[] users, Transaction[] transactions, date createdAt, date updatedAt) {
         this.id = id;
         this.name = name;
         this.document = document;
         this.phone = phone;
-        this.addres = addres;
+        this.address = address;
         this.users = users;
-        this.transaccions = transaccions;
+        this.transactions = transactions;
         this.createdAt = createdAt;
         this.updatedAt = updatedAt;
     }
@@ -53,12 +53,12 @@ public class Enterprise {
         this.phone = phone;
     }
 
-    public String getAddres() {
-        return addres;
+    public String getAddress() {
+        return address;
     }
 
-    public void setAddres(String addres) {
-        this.addres = addres;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     public User[] getUsers() {
@@ -69,12 +69,12 @@ public class Enterprise {
         this.users = users;
     }
 
-    public Transaccion[] getTransaccions() {
-        return transaccions;
+    public Transaction[] getTransactions() {
+        return transactions;
     }
 
-    public void setTransaccions(Transaccion[] transaccions) {
-        this.transaccions = transaccions;
+    public void setTransactions(Transaction[] transactions) {
+        this.transactions = transactions;
     }
 
     public date getCreatedAt() {
