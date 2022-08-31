@@ -1,4 +1,4 @@
-public class MovimientoDinero {
+public class Transaction {
     private long id;
     private String concept;
     private float amount;

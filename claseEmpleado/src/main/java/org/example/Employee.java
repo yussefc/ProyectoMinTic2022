@@ -2,7 +2,7 @@ package udea.edu.com.empleado.empleado;
 enum Enum_RolName{
     ADMIN,OPERARIO
 }
-public class employed {
+public class Employee {
     private long id;
     private String email;
     private Profile profile;
