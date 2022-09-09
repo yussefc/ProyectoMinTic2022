@@ -1,4 +1,4 @@
-import model.User;
+import domain.entities.User;
 
 public class App {
     public static void main(String[] args) throws Exception {
