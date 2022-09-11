@@ -14,17 +14,42 @@ public class Enterprise {
     private Date createdAt;
     private Date updateAt;
     //CONSTRUCTOR
+    public Enterprise(long id, String name, String document, String phone, String address){
+        this.id = id;
+        this.name = name;
+        this.document = document;
+        this.phone = phone;
+        this.address = address;
+    }
+
     public Enterprise(long id, String name, String document, String phone, String address, User[] users, Transaction[] transactions,
             Date createdAt, Date updateAt) {
         this.id = id;
         this.name = name;
         this.document = document;
         this.phone = phone;
+        this.address = address;
         this.users = users;
         this.transactions = transactions;
         this.createdAt = createdAt;
         this.updateAt = updateAt;
-    }    
+    }
+
+    //Estructura de la empresa
+    @Override
+    public String toString(){
+        String info = "\n-------------"+name+"-------------\n";
+        info += "Id: "+id;
+        info += "\nNombre: "+name;
+        info += "\nDocumento: "+document;
+        info += "\nTelefono: "+phone;
+        info += "\nDireccion: "+address;
+        info += "\n------------------------------------------------\n";
+        return info;
+    }
+    
+
+
     //CONSULTORES Y MODIFICADORES
     public long getId() {
         return id;
